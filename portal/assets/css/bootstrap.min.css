@@ -522,13 +522,7 @@ pre code {
     max-width: 1140px;
   }
 }
-.container-fluid {
-  width: 100%;
-  padding-right: 12px;
-  padding-left: 12px;
-  margin-right: auto;
-  margin-left: auto;
-}
+
 .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2609,8 +2603,8 @@ fieldset:disabled a.btn {
 }
 .btn-primary:hover {
   color: #fff;
-  background-color: #024dec;
-  border-color: #0249df;
+  background-color: green;
+  border-color: green;
 }
 .btn-primary:focus,
 .btn-primary.focus {
