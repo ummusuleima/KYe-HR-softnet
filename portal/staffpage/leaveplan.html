@@ -60,7 +60,7 @@
           </div>
           <div class="left-header col-xxl-5 col-xl-6 col-lg-5 col-md-4 col-sm-3 p-0">
             <div class="left-header col horizontal-wrapper ps-0">
-                <h5 style="color:#3753A2">SOFTNET eKYe - ADMINISTRATION PORTAL</h5>
+                <h5 style="color:#3753A2">SOFTNET eKYe - STAFF  PORTAL</h5>
                    </div>
           </div>
           <div class="nav-right col-xxl-7 col-xl-6 col-md-7 col-8 pull-right right-header p-0 ms-auto">
@@ -164,16 +164,15 @@
                   
                   </li>
                
-                  <li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav" href="userManage.html"><i data-feather="users"></i><span>Users</span></a>
+                  <li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav" href="leaveplan.html"><i data-feather="users"></i><span>Leave Plan</span></a>
                   </li>
-                  
                   <li class="sidebar-list">
-                 <a class="sidebar-link sidebar-title link-nav" href="project.html"><i data-feather="file-text"></i><span>Project</span></a>
+                 <a class="sidebar-link sidebar-title link-nav" href="certificate plan.html"><i data-feather="file-text"></i><span>Certificate Plan</span></a>
                    
                   </li>
                  
                    <li class="sidebar-list">
-                 <a class="sidebar-link sidebar-title link-nav" href="department.html"><i data-feather="briefcase"></i><span> Department</span></a>
+                 <a class="sidebar-link sidebar-title link-nav" href="leaveRequest.html"><i data-feather="briefcase"></i><span>Leave Request</span></a>
                    
                   </li>
 
@@ -208,13 +207,13 @@
               <div class="page-title">
                 <div class="row">
                   <div class="col-6">
-                    <h3>User Management</h3>
+                    <h3>Leave Plan</h3>
                   </div>
                   <div class="col-6">
                     <ol class="breadcrumb">
                       <li class="breadcrumb-item"><a href="index.html"><i data-feather="home"></i></a></li>
-                      <li class="breadcrumb-item">Users</li>
-                      <li class="breadcrumb-item active">User Management</li>
+                      <li class="breadcrumb-item"></li>
+                      <li class="breadcrumb-item active">Leave Plan</li>
                     </ol>
                   </div>
                 </div>
@@ -227,22 +226,7 @@
 
                 <div class="row">
                  
-                    <div class="col-md-6 col-lg-4 col-xl-3" > 
-                        <div class="card widget-1">
-                            <div class="body card-body">
-                            <div class="card-body"> 
-                              <div class="widget-content">                               
-                                <div> 
-                                  <h4>102</h4><span class="f-light">Total Users</span>
-                                </div>
-                              </div>
-                              
-                            </div>
-                            </div>
-
-                            
-                          </div>
-                    </div>
+                   
 
                     <div class="col-md-6 col-lg-4 col-xl-3" > 
                         <div class="card widget-1">
@@ -261,22 +245,7 @@
                           </div>
                     </div>
 
-                    <div class="col-md-6 col-lg-4 col-xl-3" > 
-                        <div class="card widget-1">
-                            <div class="body card-body">
-                            <div class="card-body"> 
-                              <div class="widget-content">                               
-                                <div> 
-                                  <h4>45</h4><span class="f-light">InActive users</span>
-                                </div>
-                              </div>
-                              
-                            </div>
-                            </div>
-
-                            
-                          </div>
-                    </div>
+                  
 
                     <div class="col-md-6 col-lg-4 col-xl-3" > 
                         <div class="card widget-1">
@@ -456,6 +425,9 @@
                               <td c;><span class=" badge badge-primary">Active</span></td>
                            
                               <td class="hover-icons-container">
+                                <a href="javascript:void(0)" class="hover-icon" data-bs-toggle="modal" data-bs-target="#addAttachmentModal" title="Attach">
+                                  <i class="fa fa-paperclip"style="color: blue;"></i>
+                              </a>
                                 <a href="javascript:void(0)" class="hover-icon" data-bs-toggle="modal" data-bs-target="#edituser" title="Edit">
                                     <i class="fa fa-edit"style="color: blue;"></i>
                                 </a>
@@ -466,7 +438,7 @@
                                 <a href="javascript:void(0)" class="hover-icon" data-bs-toggle="modal" data-bs-target="#deactivateclient" title="Deactivate">
                                     <i class="fa fa-thumbs-o-down"style="color: red;"></i>
                                 </a>
-                            </td>  </tr>
+                            </td> </tr>
                            <tr>
                             <td>121</td>
                               <td><a class="text-inherit" href="#">Joseph </a></td>
@@ -480,6 +452,9 @@
                               <td c;><span class=" badge badge-primary">Active</span></td>
                               
                               <td class="hover-icons-container">
+                                <a href="javascript:void(0)" class="hover-icon" data-bs-toggle="modal" data-bs-target="#addAttachmentModal" title="Attach">
+                                  <i class="fa fa-paperclip"style="color: blue;"></i>
+                              </a>
                                 <a href="javascript:void(0)" class="hover-icon" data-bs-toggle="modal" data-bs-target="#edituser" title="Edit">
                                     <i class="fa fa-edit"style="color: blue;"></i>
                                 </a>
@@ -503,6 +478,56 @@
             
             <!-- Container-fluid Ends-->
           </div>
+
+
+
+  <!-- Attachment model-->
+  <div class="modal fade" id="addAttachmentModal" tabindex="-1" role="dialog" aria-labelledby="addAttachmentModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Add Attachment</h5>
+          <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            
+            <div class="modal-body">     
+            <!-- <section id="input-file-browser"> -->
+              <div class="row">
+                <div class="col-6">
+                  <label class="col-form-label pt-0" for="role">Document TinNumber</label>
+                 <input class="form-control" type="file">
+              </div>
+              <div class="col-6">
+                <label class="col-form-label pt-0" for="role">Business License</label>
+               <input class="form-control" type="file">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <label class="col-form-label pt-0" for="role">Document TinNumber</label>
+             <input class="form-control" type="file">
+          </div>
+          <div class="col-6">
+            <label class="col-form-label pt-0" for="role">Business License</label>
+           <input class="form-control" type="file">
+        </div>
+      </div>
+            <!-- </section>    -->
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-danger btn-air-danger" type="button" data-bs-dismiss="modal">Cancel</button>
+          <button class="btn btn-primary btn-air-primary" type="button">Save</button>
+        </div>
+          </form>
+        </div>
+       
+      </div>
+    </div>
+  </div>
+  <!-- End of Attachment model-->
+
               <!-- Edit model-->
                     <div class="modal fade" id="edituser" tabindex="-1" role="dialog" aria-labelledby="edituser" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
@@ -571,6 +596,8 @@
                         </div>
                       </div>
                       <!-- End of Edit model-->
+
+
            <!-- Deactivate model-->
                        <div class="modal fade" id="deactivateuser" tabindex="-1" role="dialog" aria-labelledby="deactivateuser" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered" role="document">
