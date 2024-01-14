@@ -31,7 +31,7 @@
     <!-- App css-->
     <link rel="stylesheet" type="text/css"  href="../assets/css/app.min.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/style1.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/tailwind1.css">
     
     <link id="color" rel="stylesheet" href="../assets/css/color-1.css" media="screen">
     <!-- App css-->
@@ -201,450 +201,373 @@
         </div>
         
         <!-- Page Sidebar Ends-->
+
         <div class="page-body">
-            
-            <!-- Container-fluid starts-->
-            <div class="container-fluid">
-              <div class="edit-profile">
+          <div class="container-fluid">
+            <div class="page-title">
+              <div class="row">
+                <div class="col-6">
+                  <h3 class="text-xl ">TRAINEE PROFILE & DETAILS</h3>
+                </div>
+                <div class="col-6">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">                                       
+                        <svg class="stroke-icon">
+                          <use href="https://admin.pixelstrap.com/cuba/assets/svg/icon-sprite.svg#stroke-home"></use>
+                        </svg></a></li>
+                    <li class="breadcrumb-item">Form</li>
+                    <li class="breadcrumb-item active"> Trainee Details</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div> 
 
-
-                <div class="row">
-               
-                  <div class="col-md-12">
-                    <div class="card">
-                     
-                      <div class="table-responsive add-project">
-
-                        <li id="adoFatherId" class="stepper-step">
-                            <button class="stepper-head w-full" >
-                              
-                            </button>
-                            <div class="card-header ">
-                                <span class="text-end ">
-                                    <div class="btn btn-outline-success-2x  btn-air-primary"  ><a class="btn btn-light f-light" href="individualdetails.html">EMPLOYEE<span class="ms-2"> 
-                                    </span></a></div>
-                                      <div class="btn btn-outline-success-2x  btn-air-primary" ><a class="btn btn-light f-light" href="traineedetails.html">TRAINEE<span class="ms-2"> 
-                                    </span></a></div> 
-                                    
-                                    <span
-                                    class=" text-start hidden text-sm uppercase text-black md:block md:text-xl"
-                                  >
-                                    TRAINEE INFORMATION FORM</span></span>
-                                </div>
-                                      
-                            <div id="adoFatherDiv" class="stepper-content space-y-8">
-                              <form class="space-y-8">
-                                <div class="space-y-4">
-                                  <div class="border-b-2 border-crvsblue-700 py-2 px-4">
-                                    <h class="text-xl font-semibold uppercase"
-                                      >Person Information</h
-                                    >
-                                  </div>
-            
-                                  <form class="space-y-8">
-                                    <div
-                                      class="grid gap-8 px-6 md:grid-cols-3 lg:grid-cols-4"
-                                    >
-                                    <label class="block w-full">
-                                        <span class="block text-base font-light">
-                                          <!-- <span class="font-medium">Jina la kwanza /</span> -->
-                                        Trainee ID</span
-                                        >
-            
-                                        <input
-                                          type="number"
-                                          class="mt-1 h-10 w-full rounded border border-slate-400 px-4 focus:outline-crvsblue-700"
-                                          placeholder="Trainee id"
-                                        />
-                                      </label>
-            
-                                      <label class="block w-full">
-                                        <span class="block text-base font-light">
-                                          <!-- <span class="font-medium">Jina la kwanza /</span> -->
-                                          First Name</span
-                                        >
-            
-                                        <input
-                                          type="text"
-                                          class="mt-1 h-10 w-full rounded border border-slate-400 px-4 focus:outline-crvsblue-700"
-                                          placeholder="First Name"
-                                        />
-                                      </label>
-            
-                                      <label class="block w-full">
-                                        <span class="block text-base font-light">
-                                          <!-- <span class="font-medium">Jina la kati /</span> -->
-                                          Last Name</span
-                                        >
-                                        <input
-                                          type="text"
-                                          class="mt-1 h-10 w-full rounded border border-slate-400 px-4 focus:outline-crvsblue-700"
-                                          placeholder="Last Name"
-                                        />
-                                      </label>
-            
-                                      <label class="block w-full">
-                                        <span class="block text-base font-light">
-                                          <!-- <span class="font-medium">Jina la Ukoo /</span> -->
-                                          Middle Name</span
-                                        >
-                                        <input
-                                          type="text"
-                                          class="mt-1 h-10 w-full rounded border border-slate-400 px-4 focus:outline-crvsblue-700"
-                                          placeholder="Middle Name"
-                                        />
-                                      </label>
-                                      
-                                      <label class="block w-full">
-                                        <span class="block text-base font-light">
-                                          <!-- <span class="font-medium">Jina la kati /</span> -->
-                                          Preffered Name</span
-                                        >
-                                        <input
-                                          type="text"
-                                          class="mt-1 h-10 w-full rounded border border-slate-400 px-4 focus:outline-crvsblue-700"
-                                          placeholder="Preffered Name"
-                                        />
-                                      </label>
-                                      <label class="block w-full">
-                                        <span class="block text-base font-light">
-                                          <!-- <span class="font-medium">Jina la kati /</span> -->
-                                          Postal Adress</span
-                                        >
-                                        <input
-                                          type="text"
-                                          class="mt-1 h-10 w-full rounded border border-slate-400 px-4 focus:outline-crvsblue-700"
-                                          placeholder="Postal Adress"
-                                        />
-                                      </label>
-                                      <label class="block w-full">
-                                        <span class="block text-base font-light">
-                                          <!-- <span class="font-medium">Jina la kati /</span> -->
-                                          Physical/Residential Adress</span
-                                        >
-                                        <input
-                                          type="text"
-                                          class="mt-1 h-10 w-full rounded border border-slate-400 px-4 focus:outline-crvsblue-700"
-                                          placeholder="Physical/Residential Adress"
-                                        />
-                                      </label>
-
-                                      <label class="block w-full">
-                                        <span class="block text-base font-light">
-                                          <!-- <span class="font-medium">Jina la kati /</span> -->
-                                          Email Adress</span
-                                        >
-                                        <input
-                                          type="text"
-                                          class="mt-1 h-10 w-full rounded border border-slate-400 px-4 focus:outline-crvsblue-700"
-                                          placeholder="Email Adress"
-                                        />
-                                      </label>
-                                      <label class="block w-full">
-                                        <span class="block text-base font-light">
-                                          <!-- <span class="font-medium">Jina la kati /</span> -->
-                                          Telephone Number</span
-                                        >
-                                        <input
-                                          type="text"
-                                          class="mt-1 h-10 w-full rounded border border-slate-400 px-4 focus:outline-crvsblue-700"
-                                          placeholder="Telephone Number"
-                                        />
-                                      </label>
-                                      <label class="block w-full">
-                                        <span class="block text-base font-light">
-                                          <!-- <span class="font-medium">Jina la kati /</span> -->
-                                          Cell phone Number</span
-                                        >
-                                        <input
-                                          type="text"
-                                          class="mt-1 h-10 w-full rounded border border-slate-400 px-4 focus:outline-crvsblue-700"
-                                          placeholder="Cell phone Number"
-                                        />
-                                      </label>
-            
-                                     
+          <!-- Container-fluid starts-->
+          <div class="container-fluid">
+            <div class="edit-profile">
+              <div class="row">
+                <div class="col-xl-4">
+                  <div class="card">
+                    <div class="card-header">
+                      <h class="text-xl "
+                      >PROFILE INFORMATION</h>
+                      <div class="card-options"><a class="card-options-collapse" href="#" data-bs-toggle="card-collapse"><i class="fe fe-chevron-up"></i></a><a class="card-options-remove" href="#" data-bs-toggle="card-remove"><i class="fe fe-x"></i></a></div>
+                    </div>
+                    <div class="card-body">
+                      <form enctype="multipart/form-data" action="/uploadProfile" method="post">
+                        <div class="row mb-2">
+                            <div class="profile-title">
+                                <div class="media">
+                                    <label for="profilePictureInput" style="cursor: pointer;">
+                                        <img id="profileImage" class="img-80 rounded-circle" alt="" src="../assets/css/images/best employee.jpg">
+                                        <i class="fas fa-camera" style="margin-left: 5px; font-size: 1.5em; color: #007bff;"></i>
+                                    </label>
+                                    <input type="file" id="profilePictureInput" name="profilePicture" style="display: none;" accept="image/*">
+                                    <div class="media-body">
+                                        <h5 class="mb-1">UMMUSULEIMA MUSTAPHA</h5>
+                                        <p>DESIGNER</p>
                                     </div>
-            
-                                    <!-- Personal Information -->
-                                    <div class="space-y-4">
-                                      <div class="border-b-2 border-crvsblue-700 py-2 px-4">
-                                        <h class="text-xl font-semibold uppercase">
-                                          Personal Information</h
-                                        >
-                                      </div>
-            
-                                     
-            
-                                      <div
-                                        class="grid gap-8 px-6 md:grid-cols-3 lg:grid-cols-4"
-                                      >
-                                      <label class="block w-full">
-                                        <span class="block text-base font-light">
-                                          <!-- <span class="font-medium">Jina la Ukoo /</span> -->
-                                          Birth Date</span
-                                        >
-                                        <input
-                                          type="date"
-                                          class="mt-1 h-10 w-full rounded border border-slate-400 px-4 focus:outline-crvsblue-700"
-                                        />
-                                      </label>
-            
-                                      <label class="block w-full">
-                                        <span class="block text-base font-light">
-                                          <!-- <span class="font-medium">Jina la Ukoo /</span> -->
-                                          Place of Birth</span
-                                        >
-                                        <input
-                                          type="number"
-                                          class="mt-1 h-10 w-full rounded border border-slate-400 px-4 focus:outline-crvsblue-700"
-                                        />
-                                      </label>
-            
-                                      <label class="block w-full">
-                                        <span class="block text-base font-light">
-                                          <!-- <span class="font-medium">Jina la Ukoo /</span> -->
-                                          Gender</span
-                                        >
-                                        <select
-                                          type="text"
-                                          class="mt-1 h-10 w-full rounded border border-slate-400 bg-white px-4 focus:outline-crvsblue-700"
-                                        ></select>
-                                      </label>
-            
-                                        <label class="block w-full">
-                                          <span class="block text-base font-light">
-                                            Nationality</span
-                                          >
-                                          <select
-                                            class="mt-1 h-10 w-full rounded border border-slate-400 bg-white px-4 focus:outline-crvsblue-700"
-                                          >
-                                            <option></option>
-                                          </select>
-                                        </label>
-            
-                                       
-
-                                       
-            
-                                        <label class="block w-full">
-                                          <span class="block text-base font-light">
-                                            Duration of residence in usual place
-                                          </span>
-                                          <select
-                                            class="mt-1 h-10 w-full rounded border border-slate-400 bg-white px-4 focus:outline-crvsblue-700"
-                                          >
-                                            <option></option>
-                                          </select>
-                                        </label>
-            
-                                      </div>
-                                    </div>
-            
-                                    
-
-                                     <!-- Emergency contact information -->
-                                     <div class="space-y-4">
-                                        <div class="border-b-2 border-crvsblue-700 py-2 px-4">
-                                          <h class="text-xl font-semibold uppercase">
-                                            Next of Kin and Emergency Contact Information</h
-                                          >
-                                        </div>
-              
-                                       
-              
-                                        <div
-                                          class="grid gap-8 px-6 md:grid-cols-3 lg:grid-cols-4"
-                                        >
-                                        <label class="block w-full">
-                                            <span class="block text-base font-light">
-                                              <!-- <span class="font-medium">Jina la Ukoo /</span> -->
-                                              Last Name</span
-                                            >
-                                            <input
-                                            type="text"
-                                            class="mt-1 h-10 w-full rounded border border-slate-400 px-4 focus:outline-crvsblue-700"
-                                            placeholder="Last Name"
-                                          />
-                                          </label>
-
-                                          <label class="block w-full">
-                                            <span class="block text-base font-light">
-                                              <!-- <span class="font-medium">Jina la Ukoo /</span> -->
-                                              First Name</span
-                                            >
-                                            <input
-                                            type="text"
-                                            class="mt-1 h-10 w-full rounded border border-slate-400 px-4 focus:outline-crvsblue-700"
-                                            placeholder="First Name"
-                                          />
-                                          </label>
-              
-                                        <label class="block w-full">
-                                          <span class="block text-base font-light">
-                                            <!-- <span class="font-medium">Jina la Ukoo /</span> -->
-                                            Phone Number</span
-                                          >
-                                          <input
-                                      type="text"
-                                      class="mt-1 h-10 w-full rounded border border-slate-400 px-4 focus:outline-crvsblue-700"
-                                      placeholder="Phone Number"
-                                    />
-                                        </label>
-              
-                                        <label class="block w-full">
-                                          <span class="block text-base font-light">
-                                            <!-- <span class="font-medium">Jina la Ukoo /</span> -->
-                                            Adress</span
-                                          >
-                                          <input
-                                          type="text"
-                                          class="mt-1 h-10 w-full rounded border border-slate-400 px-4 focus:outline-crvsblue-700"
-                                          placeholder="Adress"
-                                        />
-                                        </label>
-              
-                                          <label class="block w-full">
-                                            <span class="block text-base font-light">
-                                              Relationship</span
-                                            >
-                                            <select
-                                              class="mt-1 h-10 w-full rounded border border-slate-400 bg-white px-4 focus:outline-crvsblue-700"
-                                            >
-                                              <option>Select relationship</option>
-                                              <option>Father</option>
-                                              <option>Mother</option>
-                                            </select>
-                                          </label>
-              
-                                         
-              
-                                        </div>    
-
-                                        <div
-                                        class="grid gap-8 px-6 md:grid-cols-3 lg:grid-cols-4"
-                                      >
-                                      <label class="block w-full">
-                                          <span class="block text-base font-light">
-                                            <!-- <span class="font-medium">Jina la Ukoo /</span> -->
-                                            Last Name</span
-                                          >
-                                          <input
-                                          type="text"
-                                          class="mt-1 h-10 w-full rounded border border-slate-400 px-4 focus:outline-crvsblue-700"
-                                          placeholder="Last Name"
-                                        />
-                                        </label>
-
-                                        <label class="block w-full">
-                                          <span class="block text-base font-light">
-                                            <!-- <span class="font-medium">Jina la Ukoo /</span> -->
-                                            First Name</span
-                                          >
-                                          <input
-                                          type="text"
-                                          class="mt-1 h-10 w-full rounded border border-slate-400 px-4 focus:outline-crvsblue-700"
-                                          placeholder="First Name"
-                                        />
-                                        </label>
-            
-                                      <label class="block w-full">
-                                        <span class="block text-base font-light">
-                                          <!-- <span class="font-medium">Jina la Ukoo /</span> -->
-                                          Phone Number</span
-                                        >
-                                        <input
-                                    type="text"
-                                    class="mt-1 h-10 w-full rounded border border-slate-400 px-4 focus:outline-crvsblue-700"
-                                    placeholder="Phone Number"
-                                  />
-                                      </label>
-            
-                                      <label class="block w-full">
-                                        <span class="block text-base font-light">
-                                          <!-- <span class="font-medium">Jina la Ukoo /</span> -->
-                                          Adress</span
-                                        >
-                                        <input
-                                        type="text"
-                                        class="mt-1 h-10 w-full rounded border border-slate-400 px-4 focus:outline-crvsblue-700"
-                                        placeholder="Adress"
-                                      />
-                                      </label>
-            
-                                        <label class="block w-full">
-                                          <span class="block text-base font-light">
-                                            Relationship</span
-                                          >
-                                          <select
-                                            class="mt-1 h-10 w-full rounded border border-slate-400 bg-white px-4 focus:outline-crvsblue-700"
-                                          >
-                                            <option>Select relationship</option>
-                                            <option>Father</option>
-                                            <option>Mother</option>
-                                          </select>
-                                        </label>
-            
-                                       
-            
-                                      </div> 
-
-                                      </div>
-
-                                       <!-- date of appointment and position -->
-                                     <div class="space-y-4">
-                                        <div class="border-b-2 border-crvsblue-700 py-2 px-4">
-                                          <h class="text-xl font-semibold uppercase">
-                                            Commencement Date and Position</h
-                                          >
-                                        </div>
-              
-                                        <div
-                                          class="grid gap-8 px-6 md:grid-cols-3 lg:grid-cols-4"
-                                        >
-                                        <label class="block w-full">
-                                            <span class="block text-base font-light">
-                                              <!-- <span class="font-medium">Jina la Ukoo /</span> -->
-                                             Date</span
-                                            >
-                                            <input
-                                              type="date"
-                                              class="mt-1 h-10 w-full rounded border border-slate-400 px-4 focus:outline-crvsblue-700"
-                                            />
-                                          </label>
-
-                                          <label class="block w-full">
-                                            <span class="block text-base font-light">
-                                              <!-- <span class="font-medium">Jina la Ukoo /</span> -->
-                                              Position</span
-                                            >
-                                            <input
-                                            type="text"
-                                            class="mt-1 h-10 w-full rounded border border-slate-400 px-4 focus:outline-crvsblue-700"
-                                            placeholder="Position"
-                                          />
-                                          </label>
-              
-                                        </div>
-
-                                      </div>
-                              
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-                                  </form>
                                 </div>
-            
-                              </form>
                             </div>
-                          </li>
+                        </div>
+                        <div class="mb-3">
+                          <button type="button" class="btn btn-outline-success-2x  btn-air-success" data-bs-toggle="modal"data-bs-target="#addAttachmentModal" >
+                              <i class="fas fa-paperclip" style="margin-right: 5px;"></i> Attach File
+                          </button>
+                          <input type="modal" id="#addAttachmentModal" name="attachment" style="display: none;">
+                        </div>
+                        <div class="mb-3">
+                            <h6 class="block text-base font light">Bio</h6>
+                            <textarea class="form-control" rows="5">On the other hand, we denounce with righteous indignation</textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label class="block text-base font light">Email-Address</label>
+                            <input class="form-control" name="email" placeholder="your-email@domain.com">
+                        </div>
+                        <div class="mb-3">
+                            <label class="block text-base font light">Password</label>
+                            <input class="form-control" type="password" name="password" value="password">
+                        </div>
+                       
+                        <div class="form-footer">
+                            <button class="btn btn-primary btn-block" type="submit">Save</button>
+                        </div>
+                    </form>
+                    </div>
+                  </div>
+                </div>
+                 
 
+
+                <div class="col-xl-8">
+                  <form class="card">
+                    
+                      <div class="card-header">
+                        <div class="row ">
+                          <h class="text-xl"
+                          >TRAINEE PROFILE</h>
+                        <div class="card-options"><a class="card-options-collapse" href="#" data-bs-toggle="card-collapse"><i class="fe fe-chevron-up"></i></a><a class="card-options-remove" href="#" data-bs-toggle="card-remove"><i class="fe fe-x"></i></a></div>
+                        <span class="text-end ">
+                          <div class="btn btn-outline-success-2x  btn-air-success"  ><a class="  " href="individualdetails.html">EMPLOYEE<span class="ms-2"> 
+                         </span></a></div>
+                           <div class="btn btn-outline-success-2x  btn-air-primary"  ><a class=" " href="traineedetails.html">TRAINEE<span class="ms-2"> 
+                         </span></a></div> 
+                             
+                         </span>
+                        </div>
+                      </div>
+
+                   
+                    <div class="card-body">
+                      <div class="border-b-2 border-crvsblue-700 py-2 px-4">
+                        <h class="text-xl font-semibold uppercase"
+                          >Person Information</h
+                        >
+                      </div>
+
+                      &nbsp;&nbsp; &nbsp;&nbsp;
+
+                      <div class="row">
+                        <div class="col-sm-6 col-md-3">
+                          <div class="mb-3">
+                            <label class="block text-base font light">Trainee ID</label>
+                            <input class="form-control" type="text" placeholder="Company">
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                          <div class="mb-3">
+                            <label class="block text-base font light">First Name </label>
+                            <input class="form-control" type="text" placeholder="Username">
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                          <div class="mb-3">
+                            <label class="block text-base font light">Last Name</label>
+                            <input class="form-control" type="email" placeholder="Email">
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                          <div class="mb-3">
+                            <label class="block text-base font light">Middle Name</label>
+                            <input class="form-control" type="text" placeholder="Company">
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                          <div class="mb-3">
+                            <label class="block text-base font light"> Preffered Name</label>
+                            <input class="form-control" type="text" placeholder="Last Name">
+                          </div>
+                        </div>
+                       
+                        
+                        <div class="col-sm-6 col-md-3">
+                          <div class="mb-3">
+                            <label class="block text-base font light">Physical/Residential Adress </label>
+                            <input class="form-control" type="number" placeholder="ZIP Code">
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                          <div class="mb-3">
+                            <label class="block text-base font light">Email Adress</label>
+                            <input class="form-control" type="number" placeholder="ZIP Code">
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                          <div class="mb-3">
+                            <label class="block text-base font light">Telephone Number</label>
+                            <input class="form-control" type="number" placeholder="ZIP Code">
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                          <div class="mb-3">
+                            <label class="block text-base font light">Cell phone Number </label>
+                            <input class="form-control" type="number" placeholder="ZIP Code">
+                          </div>
+                        </div>
+                       
+                       
                       </div>
                     </div>
+
+                    <div class="card-body">
+                      <div class="border-b-2 border-crvsblue-700 py-2 px-4">
+                        <h class="text-xl font-semibold uppercase"
+                          >Personal Information</h
+                        >
+                      </div>
+
+                      &nbsp;&nbsp; &nbsp;&nbsp;
+                      <div class="row">
+                        <div class="col-sm-6 col-md-3">
+                          <div class="mb-3">
+                            <label class="block text-base font light">Birth Date</label>
+                            <input class="form-control" type="text" placeholder="Company">
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                          <div class="mb-3">
+                            <label class="block text-base font light">Place of Birth</label>
+                            <input class="form-control" type="text" placeholder="Username">
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                          <div class="mb-3">
+                            <label class="block text-base font light"> Gender</label>
+                            <select class="form-control btn-square">
+                              <option value="0">--Select--</option>
+                              <option value="1">Male</option>
+                              <option value="2">Female</option>
+                             
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                          <div class="mb-3">
+                            <label class="block text-base font light"> Nationality</label>
+                            <select class="form-control btn-square">
+                              <option value="0">--Select--</option>
+                              <option value="1">Tanzanian</option>
+                              <option value="2">Kenyan</option>
+                             
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                          <div class="mb-3">
+                            <label class="block text-base font light">Duration of residence in usual place</label>
+                            <input class="form-control" type="email" placeholder="Email">
+                          </div>
+                        </div>
+                       
+                      </div>
+                    </div>
+
+                    <div class="card-body">
+
+                      <div class="border-b-2 border-crvsblue-700 py-2 px-4">
+                        <h class="text-xl font-semibold uppercase"
+                          >Next of Kin and Emergency Contact Information</h
+                        >
+                      </div>
+
+                      &nbsp;&nbsp; &nbsp;&nbsp;
+                      <div class="row">
+                        <div class="col-sm-6 col-md-3">
+                          <div class="mb-3">
+                            <label class="block text-base font light">Last Name</label>
+                            <input class="form-control" type="text" placeholder="Company">
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                          <div class="mb-3">
+                            <label class="block text-base font light">First Name</label>
+                            <input class="form-control" type="text" placeholder="Username">
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                          <div class="mb-3">
+                            <label class="block text-base font light">Phone Number</label>
+                            <input class="form-control" type="text" placeholder="Username">
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                          <div class="mb-3">
+                            <label class="block text-base font light">Adress</label>
+                            <input class="form-control" type="text" placeholder="Username">
+                          </div>
+                        </div>
+                       
+                        <div class="col-sm-6 col-md-3">
+                          <div class="mb-3">
+                            <label class="block text-base font light">Relationship</label>
+                            <select class="form-control btn-square">
+                              <option value="0">--Select--</option>
+                              <option value="1">Male</option>
+                              <option value="2">Female</option>
+                             
+                            </select>
+                          </div>
+                        </div>
+
+                       
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-6 col-md-3">
+                          <div class="mb-3">
+                            <label class="block text-base font light">Last Name</label>
+                            <input class="form-control" type="text" placeholder="Company">
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                          <div class="mb-3">
+                            <label class="block text-base font light">First Name</label>
+                            <input class="form-control" type="text" placeholder="Username">
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                          <div class="mb-3">
+                            <label class="block text-base font light">Phone Number</label>
+                            <input class="form-control" type="text" placeholder="Username">
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                          <div class="mb-3">
+                            <label class="block text-base font light">Adress</label>
+                            <input class="form-control" type="text" placeholder="Username">
+                          </div>
+                        </div>
+                       
+                        <div class="col-sm-6 col-md-3">
+                          <div class="mb-3">
+                            <label class="block text-base font light">Relationship</label>
+                            <select class="form-control btn-square">
+                              <option value="0">--Select--</option>
+                              <option value="1">Male</option>
+                              <option value="2">Female</option>
+                             
+                            </select>
+                          </div>
+                        </div>
+
+                       
+                      </div>
+                    </div>
+
+                    <div class="card-body">
+                      <div class="border-b-2 border-crvsblue-700 py-2 px-4">
+                        <h class="text-xl font-semibold uppercase"
+                          >Commencement Date and Position</h
+                        >
+                      </div>
+
+                      &nbsp;&nbsp; &nbsp;&nbsp;
+                      <div class="row">
+                        <div class="col-sm-6 col-md-3">
+                          <div class="mb-3">
+                            <label class="block text-base font light">Date</label>
+                            <input class="form-control" type="text" placeholder="Company">
+                          </div>
+                        </div>
+                        
+                        <div class="col-sm-6 col-md-3">
+                          <div class="mb-3">
+                            <label class="block text-base font light">Position</label>
+                            <select class="form-control btn-square">
+                              <option value="0">--Select--</option>
+                              <option value="1"></option>
+                              <option value="2"></option>
+                             
+                            </select>
+                          </div>
+                        </div>
+                      
+                      </div>
+                    </div>
+
+
+                    <div class="card-footer text-end">
+                      <button class="btn btn-primary" type="submit">Save</button>
+                    </div>
+                  </form>
+                </div>
+                <div class="col-md-12">
+                  <div class="card">
+                   
+                  
                   </div>
                 </div>
               </div>
             </div>
-            
+          </div>
+          
+          <!-- Container-fluid Ends-->
+                </div>
+                
+              </div>
+            </div>
+          </div>
+         
             <!-- Container-fluid Ends-->
           </div>
               
