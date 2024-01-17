@@ -188,7 +188,12 @@
                   
                   </li>
                
-                  <li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav" href="userManage.html"><i data-feather="users"></i><span>Users</span></a>
+                  <li class="sidebar-list">
+                    <a class="sidebar-link sidebar-title link-nav" href="userManage.html"><i data-feather="users"></i><span>Users</span></a>
+                  </li>
+                  
+                  <li class="sidebar-list">
+                    <a class="sidebar-link sidebar-title link-nav" href="client.html"><i data-feather="user"></i><span>Client</span></a>
                   </li>
                   
                   <li class="sidebar-list">
@@ -343,10 +348,7 @@
                             <div class="modal-body">
                               <form class="form-space theme-form ">
                                 <div class="row">
-                                  <div class="col-3">
-                                    <label class="col-form-label pt-0" for="fname">User ID</label>
-                                  <input class="form-control" type="text" placeholder="eg John">
-                                </div>
+                                  
                             <div class="col-3">
                                 <label class="col-form-label pt-0" for="fname">First Name</label>
                               <input class="form-control" type="text" placeholder="eg John">
@@ -359,13 +361,14 @@
                               <label class="col-form-label pt-0" for="lname">Last Name</label>
                             <input class="form-control" type="text" name="text" placeholder="eg Doe">
                           </div>
+                          <div class="col-3">
+                            <label class="col-form-label pt-0" for="email">Email </label>
+                          <input class="form-control" type="text" name="text" placeholder="eg jdoe@softnet.co.tz">
+                        </div>
                            
                           </div>
                           <div class="row">
-                            <div class="col-3">
-                              <label class="col-form-label pt-0" for="email">Email </label>
-                            <input class="form-control" type="text" name="text" placeholder="eg jdoe@softnet.co.tz">
-                          </div>
+                            
                             <div class="col-3">
                                 <label class="col-form-label pt-0" for="phone">Phone Number</label>
                               <input class="form-control" type="text" placeholder="eg 255 657899089">
@@ -374,14 +377,26 @@
                               <label class="col-form-label pt-0" for="phone">contact Number (CUG)</label>
                             <input class="form-control" type="text" placeholder="eg 255 657899089">
                           </div>
+                          <div class="col-3">
+                            <label class="col-form-label pt-0" for="email">Company Designation </label>
+                            <select class="js-example-basic-single col-sm-12">
+                         
+                              <option value="AL">Software Developer</option>
+                              <option value="WY">Software Design</option>
+                              <option value="AL">Business Analyst</option>
+                           
+                     
+                          </select>   </div>
                             <div class="col-3">
-                              <label class="col-form-label pt-0" for="email">Department </label>
+                              <label class="col-form-label pt-0" for="email">Department Name</label>
                               <select class="js-example-basic-single col-sm-12">
                            
                                 <option value="AL">Software</option>
-                                <option value="WY">Network</option>
-                                <option value="AL">EFD</option>
-                                <option value="WY">Collaboration</option>
+                                <option value="WY">ICT Facility</option>
+                                <option value="AL">ICT Infrastructure</option>
+                                <option value="WY">Finance & Administartion</option>
+                                <option value="WY">EFD</option>
+                                <option value="WY">Sales</option>
                        
                             </select>   </div>
                        
@@ -390,23 +405,27 @@
                           <div class="row">
 
                             <div class="col-3">
-                                <label class="col-form-label pt-0" for="branch">Region</label>
+                                <label class="col-form-label pt-0" for="branch">Department Position</label>
                                 <select class="js-example-basic-single col-sm-12">
                            
-                              <option value="AL">Dar</option>
-                              <option value="WY">Mwanza</option>
-                              <option value="AL">Arusha</option>
-                              <option value="WY">Kigoma</option>
+                              <option value="AL">Supervisor</option>
+                              <option value="WY">Manager</option>
+                              <option value="AL">HOD</option>
+                              <option value="WY">Normal staff</option>
                      
                           </select>
                             </div>
                             <div class="col-3">
-                                <label class="col-form-label pt-0" for="role">District </label>
+                                <label class="col-form-label pt-0" for="role">Categories </label>
                                    <select class="js-example-basic-single col-sm-12">
                            
-                              <option value="AL">TEMEKE</option>
-                              <option value="WY">ILALA</option>
-                              <option value="WY">KiNINDONI</option>
+                                    <option value="AL">Intern</option>
+                                    <option value="WY">Field</option>
+                                    <option value="AL">Trainee</option>
+                                    <option value="WY">Temporary staff</option>
+                                    <option value="WY">Permanent staff</option>
+                                    <option value="WY">Director</option>
+                                    <option value="WY">HR</option>
                           
                           </select>
                             </div>
@@ -420,23 +439,6 @@
                         
                         </select>
                           </div>
-                            <div class="col-3">
-                              <label class="col-form-label pt-0" for="branch">Position</label>
-                              <select class="js-example-basic-single col-sm-12">
-                         
-                            <option value="AL">Intern</option>
-                            <option value="WY">Field</option>
-                            <option value="AL">Trainee</option>
-                            <option value="WY">Temporary staff</option>
-                            <option value="WY">Permanent staff</option>
-                            <option value="WY">Director</option>
-                            <option value="WY">HR</option>
-
-                        </select>
-                          </div>
-                          
-
-
                           </div>
                           </form>
                             </div>
@@ -453,14 +455,17 @@
                         <table class="table card-table table-vcenter text-nowrap">
                           <thead>
                             <tr>
-                              <th>User ID</th>
+                              
                               <th>First Name</th> 
                               <th>Middle Name</th>
                                <th>Last Name</th>
                               <th>Email</th>
                                <th>Phone</th>
-                              <th>Position</th>
-                                <th>Role</th>
+                               <th>Company Designation</th>
+                               <th>Department</th>
+                               <th>Department Position</th>
+                               <th>Role</th>
+                               
                               <th>Status</th>
                              
                               <th>Action</th>
@@ -468,13 +473,15 @@
                           </thead>
                           <tbody>
                             <tr>
-                              <td>120</td>
+                           
                               <td><a class="text-inherit" href="#">Salim  </a></td>
                               <td>khalid</td>
                               <td>Kambangwa</td>
                                 <td>skambangwa@sofnet.co.tz</td>
                                   <td>0784456789</td>
-                                    <td>Permanent Staff</td>
+                                    <td>Software Design</td>
+                                       <td>Software department</td>
+                                       <td>Supervisor</td>
                                        <td>Staff</td>
                                        
                               <td c;><span class=" badge badge-primary">Active</span></td>
@@ -491,18 +498,20 @@
                                     <i class="fa fa-thumbs-o-down"style="color: red;"></i>
                                 </a>
                             </td>  </tr>
-                           <tr>
-                            <td>121</td>
-                              <td><a class="text-inherit" href="#">Joseph </a></td>
-                              <td>Mushi </td>
-                              <td>Mziray </td>
-                                <td>jmziray@sofnet.co.tz</td>
-                                  <td>0787456780</td>
-                                    <td>Permanent staff</td>
-                                       <td>staff </td>
+                            <tr>
+                           
+                              <td><a class="text-inherit" href="#">Salim  </a></td>
+                              <td>khalid</td>
+                              <td>Kambangwa</td>
+                                <td>skambangwa@sofnet.co.tz</td>
+                                  <td>0784456789</td>
+                                    <td>Software Design</td>
+                                       <td>Software department</td>
+                                       <td>Supervisor</td>
+                                       <td>Staff</td>
                                        
                               <td c;><span class=" badge badge-primary">Active</span></td>
-                              
+                           
                               <td class="hover-icons-container">
                                 <a href="javascript:void(0)" class="hover-icon" data-bs-toggle="modal" data-bs-target="#edituser" title="Edit">
                                     <i class="fa fa-edit"style="color: blue;"></i>
@@ -514,7 +523,7 @@
                                 <a href="javascript:void(0)" class="hover-icon" data-bs-toggle="modal" data-bs-target="#deactivateclient" title="Deactivate">
                                     <i class="fa fa-thumbs-o-down"style="color: red;"></i>
                                 </a>
-                            </td> </tr>
+                            </td>  </tr>
 
                           </tbody>
                         </table>

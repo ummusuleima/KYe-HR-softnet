@@ -28,17 +28,17 @@
     <!-- Bootstrap css-->
     <link rel="stylesheet" type="text/css" href="../assets/css/vendors/bootstrap.css">
     <!-- App css-->
-    <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css" >
-    <link rel="stylesheet" type="text/css" href="../assets/css/metisMenu.min.css" >
     <link rel="stylesheet" type="text/css"  href="../assets/css/app.min.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/style1.css">
     <link id="color" rel="stylesheet" href="../assets/css/color-1.css" media="screen">
+   
     <!-- App css-->
-    <link rel="stylesheet" type="text/css" href="../assets/css/icons.min.css">
     
+    <link rel="stylesheet" type="text/css" href="../assets/css/icons.min.css">
     <!-- Responsive css-->
     <link rel="stylesheet" type="text/css" href="../assets/css/responsive.css">
+  </head>
     
   </head>
 
@@ -195,16 +195,18 @@
                
                   <li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav" href="userManage.html"><i data-feather="users"></i><span>Users</span></a>
                   </li>
+                  <li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav" href="client.html"><i data-feather="user"></i><span>Client</span></a>
+                  </li>
                   
                   <li class="sidebar-list">
-                 <a class="sidebar-link sidebar-title link-nav" href="project.html"><i data-feather="file-text"></i><span>Project</span></a>
-                   
-                  </li>
-                 
-                   <li class="sidebar-list">
-                 <a class="sidebar-link sidebar-title link-nav" href="department.html"><i data-feather="briefcase"></i><span> Department</span></a>
-                   
-                  </li>
+                    <a class="sidebar-link sidebar-title link-nav" href="project.html"><i data-feather="file-text"></i><span>Project</span></a>
+                      
+                     </li>
+                    
+                      <li class="sidebar-list">
+                    <a class="sidebar-link sidebar-title link-nav" href="department.html"><i data-feather="briefcase"></i><span> Department</span></a>
+                      
+                     </li>
 
                   <li class="sidebar-main-title">
                     <div>
@@ -342,36 +344,48 @@
                               <form class="form-space theme-form ">
                                 <div class="row">
                                   <div class="col-3">
-                                    <label class="col-form-label pt-0" for="fname">Department ID</label>
-                                  <input class="form-control" type="text" placeholder="eg 001">
+                                    <label class="col-form-label pt-0" for="email">Department Category</label>
+                                    <select class="js-example-basic-single col-sm-12">
+                                      <option value="AL">Main</option>
+                                      <option value="WY">Sub category</option>
+                                    
+                                  </select>   </div>
+                                  <div class="col-3">
+                                    <label class="col-form-label pt-0" for="branch">Department Position</label>
+                                    <select class="js-example-basic-single col-sm-12">
+                               
+                                  <option value="AL">Supervisor</option>
+                                  <option value="WY">Manager</option>
+                                  <option value="AL">HOD</option>
+                                  <option value="WY">Normal staff</option>
+                         
+                              </select>
                                 </div>
-                            <div class="col-3">
-                                <label class="col-form-label pt-0" for="fname">Department Name</label>
-                              <input class="form-control" type="text" placeholder="eg Software Department">
-                            </div>
-                            <div class="col-3">
-                                <label class="col-form-label pt-0" for="email">H.O.D Name </label>
-                              <input class="form-control" type="text" name="text" placeholder="eg Said Khelef">
-                            </div>
-                            <div class="col-3">
-                                <label class="col-form-label pt-0" for="lname">Region</label>
-                              <input class="form-control" type="text" name="text" placeholder="eg Dar">
-                            </div>
+                                <div class="col-3">
+                                  <label class="col-form-label pt-0" for="branch">Department Head Name</label>
+                                  <select class="js-example-basic-single col-sm-12">
+                             
+                                <option value="AL">Said Kibaor</option>
+                                <option value="WY">Yusuph Mwaki</option>
+                            
+                            </select>
+                              </div>
+                              <div class="col-3">
+                                <label class="col-form-label pt-0" for="email">Department Name</label>
+                                <select class="js-example-basic-single col-sm-12">
+                             
+                                  <option value="AL">Software</option>
+                                  <option value="WY">ICT Facility</option>
+                                  <option value="AL">ICT Infrastructure</option>
+                                  <option value="WY">Finance & Administartion</option>
+                                  <option value="WY">EFD</option>
+                                  <option value="WY">Sales</option>
+                         
+                              </select>   </div>
+                           
                          
                           </div>
-                          <div class="row">
-                            <div class="col-3">
-                                <label class="col-form-label pt-0" for="lname">District</label>
-                              <input class="form-control" type="text" name="text" placeholder="eg Kinondoni">
-                            </div>
-                            <div class="col-3">
-                                <label class="col-form-label pt-0" for="phone">Physical Adress</label>
-                              <input class="form-control" type="text" placeholder="eg Sembeti street ">
-                            </div>
-                          
-                          
-                       
-                          </div>
+                         
 
                        
                           </form>
@@ -389,12 +403,10 @@
                         <table class="table card-table table-vcenter text-nowrap">
                           <thead>
                             <tr>
-                              <th>Department ID</th>
-                              <th>Department Name</th> 
-                              <th>H.O.D Name</th>
-                               <th>Region</th>
-                              <th>District</th>
-                               <th>Physical Adress</th>
+                              <th>Department Category</th>
+                              <th>Department Position</th> 
+                              <th>Department Head Name</th>
+                               <th>Department Name</th>
                             
                               <th>Status</th>
                               <th>Action</th>
@@ -402,15 +414,11 @@
                           </thead>
                           <tbody>
                             <tr>
-                              <td>120</td>
-                              <td><a class="text-inherit" href="#">Network Dept </a></td>
-                              <td>Zaki Hamady</td>
-                              <td>Dar</td>
-                                <td>Kinondoni</td>
-                                  <td>Mikocheni Migombani</td>
-                                
+                              <td>Main</td>
+                              <td>HOD</td>
+                              <td>Said Kibao</td>
+                                <td>Software</td>
                                       
-                                       
                               <td c;><span class=" badge badge-primary">Active</span></td>
                            
                               <td class="hover-icons-container">
@@ -425,18 +433,15 @@
                                     <i class="fa fa-thumbs-o-down"style="color: red;"></i>
                                 </a>
                             </td>  </tr>
-                           <tr>
-                            <td>121</td>
-                              <td><a class="text-inherit" href="#">Software Dept </a></td>
-                              <td>Saidy Kibao </td>
-                              <td>Zanzibar</td>
-                                <td>Kiembe samaki</td>
-                                  <td>Migombani</td>
-                                    
-                                  
-                                       
+
+                            <tr>
+                              <td>Subcategory</td>
+                              <td>Supervisor</td>
+                              <td>Samad kirio</td>
+                                <td>ICT Facility</td>
+                                      
                               <td c;><span class=" badge badge-primary">Active</span></td>
-                              
+                           
                               <td class="hover-icons-container">
                                 <a href="javascript:void(0)" class="hover-icon" data-bs-toggle="modal" data-bs-target="#editdep" title="Edit">
                                     <i class="fa fa-edit"style="color: blue;"></i>
@@ -448,8 +453,8 @@
                                 <a href="javascript:void(0)" class="hover-icon" data-bs-toggle="modal" data-bs-target="#deactivateclient" title="Deactivate">
                                     <i class="fa fa-thumbs-o-down"style="color: red;"></i>
                                 </a>
-                            </td> </tr>
-
+                            </td>  </tr>
+                         
                           </tbody>
                         </table>
                       </div>
@@ -473,27 +478,24 @@
                               <form class="form-space theme-form ">
                                 <div class="row">
                             <div class="col-4">
-                                <label class="col-form-label pt-0" for="fname">Department Name</label>
+                                <label class="col-form-label pt-0" for="fname">Department Category</label>
                               <input class="form-control" type="text" placeholder="eg John">
                             </div>
                             <div class="col-4">
-                                <label class="col-form-label pt-0" for="lname">H.O.D  Name</label>
+                                <label class="col-form-label pt-0" for="lname">Department Position</label>
                               <input class="form-control" type="text" name="text" placeholder="eg Doe">
                             </div>
                             <div class="col-4">
-                                <label class="col-form-label pt-0" for="email">Region </label>
+                                <label class="col-form-label pt-0" for="email">Department Head Name</label>
                               <input class="form-control" type="text" name="text" placeholder="eg jdoe@softnet.co.tz">
                             </div>
                           </div>
                                 <div class="row">
                             <div class="col-4">
-                                <label class="col-form-label pt-0" for="phone">District</label>
+                                <label class="col-form-label pt-0" for="phone">Department Namet</label>
                               <input class="form-control" type="text" placeholder="eg 255 657899089">
                             </div>
-                            <div class="col-4">
-                              <label class="col-form-label pt-0" for="phone">Physical Adress</label>
-                            <input class="form-control" type="text" placeholder="eg 255 657899089">
-                          </div>
+                           
                           
                           </div>
                           </form>

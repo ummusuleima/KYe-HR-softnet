@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -32,9 +31,10 @@
     <link rel="stylesheet" type="text/css"  href="../assets/css/app.min.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/style1.css">
-    
     <link id="color" rel="stylesheet" href="../assets/css/color-1.css" media="screen">
+   
     <!-- App css-->
+    
     <link rel="stylesheet" type="text/css" href="../assets/css/icons.min.css">
     <!-- Responsive css-->
     <link rel="stylesheet" type="text/css" href="../assets/css/responsive.css">
@@ -60,7 +60,7 @@
           </div>
           <div class="left-header col-xxl-5 col-xl-6 col-lg-5 col-md-4 col-sm-3 p-0">
             <div class="left-header col horizontal-wrapper ps-0">
-                <h5 style="color:#3753A2">SOFTNET eKYe - STAFF  PORTAL</h5>
+                <h5 style="color:#3753A2">SOFTNET eKYe - ADMINISTRATION PORTAL</h5>
                    </div>
           </div>
           <div class="nav-right col-xxl-7 col-xl-6 col-md-7 col-8 pull-right right-header p-0 ms-auto">
@@ -68,7 +68,7 @@
               
 
               <li class="onhover-dropdown">
-                <div class="notification-box"><i data-feather="bell"> </i><span class="badge rounded-pill badge-secondary">4                                </span></div>
+                <div class="notification-box"><i data-feather="bell"> </i><span class="badge rounded-pill badge-secondary">4  </span></div>
                 <ul class="notification-dropdown onhover-show-div">
                   <li><i data-feather="bell"></i>
                     <h6 class="f-18 mb-0">Notitications</h6>
@@ -137,7 +137,7 @@
             </div>
             <div class="logo-icon-wrapper"><a href="index.html"><img class="img-fluid" src="../assets/images/logo/logo.png" alt=""></a></div>
 
-             <nav class="sidebar-main">
+            <nav class="sidebar-main">
               <div class="left-arrow" id="left-arrow"><i data-feather="arrow-left"></i></div>
               <div id="sidebar-menu">
                 <ul class="sidebar-links" id="simple-bar">
@@ -153,10 +153,32 @@
                   <li class="sidebar-list">
                    <a class="sidebar-link sidebar-title link-nav" href="index.html"><i data-feather="home"></i><span >Dashboard</span></a>
                   </li>
-                  <li class="sidebar-list">
-                    <a class="sidebar-link sidebar-title link-nav" href="individualdetails.html"><i data-feather="plus"></i><span >Personal Details</span></a>
-                   </li>
-                  
+                   <li class="sidebar-list">
+                    <a class="sidebar-link sidebar-title link-nav" href="permission.html"><i data-feather="lock"></i><span>Permission</span></a>  
+                     </li> 
+                     
+                     
+                     <li class="sidebar-main-title">
+                      <div>
+                        <h6 >Blog</h6>
+                        <p >Add , View, edit , delete</p>
+                      </div>
+                    
+                    </li>
+
+
+                     
+                     <li class="sidebar-list">
+                      <a class="sidebar-link sidebar-title link-nav" href="blogger.html"> <i data-feather="folder-plus"></i></i><span>Add Blog</span></a>  
+                       </li>
+
+                       <li class="sidebar-list">
+                        <a class="sidebar-link sidebar-title link-nav" href="blogdetails.html"><i data-feather="folder"></i><span> Blog Details</span></a>  
+                         </li>
+
+                         <li class="sidebar-list">
+                          <a class="sidebar-link sidebar-title link-nav" href="Single.html"><i data-feather="file"></i><span>Single blog</span></a>  
+                           </li>
                      
                      <li class="sidebar-main-title">
                     <div>
@@ -166,15 +188,21 @@
                   
                   </li>
                
-                  <li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav" href="leaveplan.html"><i data-feather="users"></i><span>Leave Plan</span></a>
-                  </li>
                   <li class="sidebar-list">
-                 <a class="sidebar-link sidebar-title link-nav" href="certificate plan.html"><i data-feather="file-text"></i><span>Certificate Plan</span></a>
+                    <a class="sidebar-link sidebar-title link-nav" href="userManage.html"><i data-feather="users"></i><span>Users</span></a>
+                  </li>
+
+                  <li class="sidebar-list">
+                    <a class="sidebar-link sidebar-title link-nav" href="client.html"><i data-feather="user"></i><span>Client</span></a>
+                  </li>
+                  
+                  <li class="sidebar-list">
+                 <a class="sidebar-link sidebar-title link-nav" href="project.html"><i data-feather="file-text"></i><span>Project</span></a>
                    
                   </li>
                  
                    <li class="sidebar-list">
-                 <a class="sidebar-link sidebar-title link-nav" href="leaveRequest.html"><i data-feather="briefcase"></i><span>Leave Request</span></a>
+                 <a class="sidebar-link sidebar-title link-nav" href="department.html"><i data-feather="briefcase"></i><span> Department</span></a>
                    
                   </li>
 
@@ -202,20 +230,19 @@
 
           </div>
         </div>
-        
         <!-- Page Sidebar Ends-->
         <div class="page-body">
             <div class="container-fluid">
               <div class="page-title">
                 <div class="row">
                   <div class="col-6">
-                    <h3>Leave Plan</h3>
+                    <h3>Client  Management</h3>
                   </div>
                   <div class="col-6">
                     <ol class="breadcrumb">
                       <li class="breadcrumb-item"><a href="index.html"><i data-feather="home"></i></a></li>
-                      <li class="breadcrumb-item"></li>
-                      <li class="breadcrumb-item active">Leave Plan</li>
+                      <li class="breadcrumb-item">Users</li>
+                      <li class="breadcrumb-item active">Client Management</li>
                     </ol>
                   </div>
                 </div>
@@ -224,49 +251,142 @@
             <!-- Container-fluid starts-->
             <div class="container-fluid">
               <div class="edit-profile">
- 
+
+
+                <div class="row">
+                 
+                    <div class="col-md-6 col-lg-4 col-xl-3" > 
+                        <div class="card widget-1">
+                            <div class="body card-body">
+                            <div class="card-body"> 
+                              <div class="widget-content">                               
+                                <div> 
+                                  <h4>102</h4><span class="f-light">Total Client</span>
+                                </div>
+                              </div>
+                              
+                            </div>
+                            </div>
+
+                            
+                          </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-xl-3" > 
+                        <div class="card widget-1">
+                            <div class="body card-body">
+                            <div class="card-body"> 
+                              <div class="widget-content">                               
+                                <div> 
+                                  <h4>62</h4><span class="f-light">Permanent Clients</span>
+                                </div>
+                              </div>
+                              
+                            </div>
+                            </div>
+
+                            
+                          </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-xl-3" > 
+                        <div class="card widget-1">
+                            <div class="body card-body">
+                            <div class="card-body"> 
+                              <div class="widget-content">                               
+                                <div> 
+                                  <h4>45</h4><span class="f-light"></span>
+                                </div>
+                              </div>
+                              
+                            </div>
+                            </div>
+
+                            
+                          </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-xl-3" > 
+                        <div class="card widget-1">
+                            <div class="body card-body">
+                            <div class="card-body"> 
+                              <div class="widget-content">                               
+                                <div> 
+                                  <h4>10</h4><span class="f-light"> </span>
+                                </div>
+                                <di><i data-feather="ban" style="color: blue; align-items: center;"></i></di>
+                              </div>
+                              
+                            </div>
+                            </div>
+
+                            
+                          </div>
+                    </div>
+                
+                   
+                   
+            
+                
                   <div class="col-md-12">
                     <div class="card">
                       <div class="card-header ">
-                     <span class="text-end ">
-                      <button class="btn btn-outline-success  btn-air-primary" type="button" ><i class="fa fa-upload"></i> Export</button>
-                       
-                         <button class="btn btn-primary  btn-air-primary" type="button" data-bs-toggle="modal" data-bs-target="#adduser"><i class="fa fa-user-plus"></i> Add Leave Plan</button> </span> 
-                           
+                     <span class="text-end "><button class="btn btn-outline-secondary  btn-air-primary" type="button" ><i class="fa fa-download"></i> Export</button>
+                       <button class="btn btn-outline-primary  btn-air-primary" type="button" ><i class="fa fa-upload"></i> Import</button> 
+                         <button class="btn btn-primary  btn-air-primary" type="button" data-bs-toggle="modal" data-bs-target="#adduser"><i class="fa fa-user-plus"></i> Add Client</button> </span>   
                         <!-- Add model-->
-                          <div class="modal fade" id="adduser" tabindex="-1" role="dialog" aria-labelledby="adduser" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <h5 class="modal-title">Add Leave Plan</h5>
-                              <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                              <form class="form-space theme-form ">
-                                <div class="row">
-                                  <div class="col-4">
-                                    <label class="col-form-label pt-0" for="fname">Year</label>
-                                  <input class="form-control" type="text" placeholder="eg John">
+                        <div class="modal fade" id="adduser" tabindex="-1" role="dialog" aria-labelledby="adduser" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title">Add New Client</h5>
+                                  <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
-                            <div class="col-4">
-                                <label class="col-form-label pt-0" for="fname">Discription</label>
-                              <input class="form-control" type="text" placeholder="eg Anual ">
+                                <div class="modal-body">
+                                  <form class="form-space theme-form ">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <label class="col-form-label pt-0" for="lname">Company Name </label>
+                                          <input class="form-control" type="text" name="text" placeholder="Softnet">
+                                        </div>
+                                      <div class="col-3">   
+                                        <label class="col-form-label pt-0" for="fname"> Client Name </label>
+                                      <input class="form-control" type="text" placeholder="eg John">
+                                    </div>
+                                <div class="col-3">
+                                    <label class="col-form-label pt-0" for="fname">Location</label>
+                                  <input class="form-control" type="text" placeholder="eg Mikocheni">
+                                </div>
+                                <div class="col-3">
+                                    <label class="col-form-label pt-0" for="lname">Email </label>
+                                  <input class="form-control" type="text" name="text" placeholder="eg ummu@gmail.com">
+                                </div>
+                               
+                               
+                              </div>
+
+                              <div class="row">
+                                <div class="col-3">
+                                  <label class="col-form-label pt-0" for="fname">Physical Adress</label>
+                                <input class="form-control" type="text" placeholder="Migombani">
+                              </div>
+                              <div class="col-3">
+                                <label class="col-form-label pt-0" for="fname">Country</label>
+                              <input class="form-control" type="text" placeholder="Tanzania">
                             </div>
-                            <div class="col-4">
-                                <label class="col-form-label pt-0" for="lname">Successor</label>
-                              <input class="form-control" type="text" name="text" placeholder="eg Hellen ">
-                            </div>
-                          
-                          </div>
-                        
-                          </form>
-                            </div>
-                            <div class="modal-footer">
-                              <button class="btn btn-danger btn-air-danger" type="button" data-bs-dismiss="modal">Cancel</button>
-                              <button class="btn btn-primary btn-air-primary" type="button">Save</button>
-                            </div>
-                          </div>
+                         
                         </div>
+                          
+                              
+                              </form>
+                                </div>
+                                <div class="modal-footer">
+                                  <button class="btn btn-danger btn-air-danger" type="button" data-bs-dismiss="modal">Cancel</button>
+                                  <button class="btn btn-primary btn-air-primary" type="button">Save</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                       </div>
                         <!-- End of Add model-->
                       </div>
@@ -274,9 +394,12 @@
                         <table class="table card-table table-vcenter text-nowrap">
                           <thead>
                             <tr>
-                              <th>Year</th>
-                              <th>Discription</th> 
-                              <th>Successor</th>
+                              <th>Company Name</th>
+                              <th>Client Name</th> 
+                              <th>Location</th>
+                               <th>Email</th>
+                               <th>Physical Adress </th>
+                               <th>Country </th>
                               <th>Status</th>
                              
                               <th>Action</th>
@@ -284,20 +407,17 @@
                           </thead>
                           <tbody>
                             <tr>
-                              <td>2023</td>
-                              <td>A year Leave Plan</td>
-                              <td>Kambangwa</td>
-                                       
-                              <td c;><span class=" badge badge-primary">On leave</span></td>
+                              <td>Softnet Technologies</td>
+                              <td>Ummusuleima Mustapha</td>
+                              <td>Zanzibar</td>
+                              <td> Softnet@gmail.com</td>
+                              <td>Mazizini</td>
+                              <td>Zanzibar</td>
+        
+                              <td c;><span class=" badge badge-primary">Ongoing </span></td>
                            
                               <td class="hover-icons-container">
-                                <a href="javascript:void(0)" class="hover-icon" data-bs-toggle="modal" data-bs-target="#addPlanModal" title="Plans">
-                                  <i class="fa fa-plus"style="color: blue;"></i>
-                              </a>
-                              <a href="javascript:void(0)" class="hover-icon" data-bs-toggle="modal" data-bs-target="#viewPlanModal" title="View">
-                                <i class="fa fa-eye"style="color: green;"></i>
-                            </a>
-                                <a href="javascript:void(0)" class="hover-icon" data-bs-toggle="modal" data-bs-target="#edituser" title="Edit">
+                                <a href="javascript:void(0)" class="hover-icon" data-bs-toggle="modal" data-bs-target="#editproject" title="Edit">
                                     <i class="fa fa-edit"style="color: blue;"></i>
                                 </a>
                                
@@ -307,200 +427,80 @@
                                 <a href="javascript:void(0)" class="hover-icon" data-bs-toggle="modal" data-bs-target="#deactivateclient" title="Deactivate">
                                     <i class="fa fa-thumbs-o-down"style="color: red;"></i>
                                 </a>
-                            </td> </tr>
+                            </td>  </tr>
                             <tr>
-                              <td>2023</td>
-                              <td>A year Leave Plan</td>
-                              <td>Kambangwa</td>
-                                       
-                              <td c;><span class=" badge badge-primary">On leave</span></td>
-                           
-                              <td class="hover-icons-container">
-                                <a href="javascript:void(0)" class="hover-icon" data-bs-toggle="modal" data-bs-target="#addPlanModal" title="Plans">
-                                  <i class="fa fa-plus"style="color: blue;"></i>
-                              </a>
-                              <a href="javascript:void(0)" class="hover-icon" data-bs-toggle="modal" data-bs-target="#viewPlanModal" title="View">
-                                <i class="fa fa-eye"style="color: green;"></i>
-                            </a>
-                                <a href="javascript:void(0)" class="hover-icon" data-bs-toggle="modal" data-bs-target="#edituser" title="Edit">
-                                    <i class="fa fa-edit"style="color: blue;"></i>
-                                </a>
-                               
-                                <a href="javascript:void(0)" class="hover-icon" title="Activate">
-                                    <i class="fa fa-thumbs-o-up"style="color: green;"></i>
-                                </a>
-                                <a href="javascript:void(0)" class="hover-icon" data-bs-toggle="modal" data-bs-target="#deactivateclient" title="Deactivate">
-                                    <i class="fa fa-thumbs-o-down"style="color: red;"></i>
-                                </a>
-                            </td> </tr>
+                                <td>Softnet Technologies</td>
+                                <td>Ummusuleima Mustapha</td>
+                                <td>Zanzibar</td>
+                                <td> Softnet@gmail.com</td>
+                                <td>Mazizini</td>
+                                <td>Zanzibar</td>
+          
+                                <td c;><span class=" badge badge-primary">Ongoing </span></td>
+                             
+                                <td class="hover-icons-container">
+                                  <a href="javascript:void(0)" class="hover-icon" data-bs-toggle="modal" data-bs-target="#editproject" title="Edit">
+                                      <i class="fa fa-edit"style="color: blue;"></i>
+                                  </a>
+                                 
+                                  <a href="javascript:void(0)" class="hover-icon" title="Activate">
+                                      <i class="fa fa-thumbs-o-up"style="color: green;"></i>
+                                  </a>
+                                  <a href="javascript:void(0)" class="hover-icon" data-bs-toggle="modal" data-bs-target="#deactivateclient" title="Deactivate">
+                                      <i class="fa fa-thumbs-o-down"style="color: red;"></i>
+                                  </a>
+                              </td>  </tr>
 
                           </tbody>
                         </table>
                       </div>
                     </div>
                   </div>
-              
+                </div>
               </div>
             </div>
             
             <!-- Container-fluid Ends-->
           </div>
-
-
-
-  <!-- Add Plan model-->
-  <div class="modal fade" id="addPlanModal" tabindex="-1" role="dialog" aria-labelledby="addPlanModal" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">Add Plan</h5>
-          <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <form class="form-space theme-form ">
-            <div class="row">
-              <div class="col-3">
-                <label class="col-form-label pt-0" for="branch">Leave Type</label>
-                <select class="js-example-basic-single col-sm-12">
-           
-              <option value="AL">Annual leave</option>
-              <option value="AL">Emergency Leave</option>
-       
-          </select>
-            </div>
-              <div class="col-3">
-                <label class="col-form-label pt-0" for="fname">Discription</label>
-              <input class="form-control" type="text" placeholder="eg 2023">
-            </div>
-        <div class="col-3">
-            <label class="col-form-label pt-0" for="fname">Start Date</label>
-          <input class="form-control" type="text" placeholder="eg My Certificates">
-        </div>
-       
-        <div class="col-3">
-          <label class="col-form-label pt-0" for="lname">End Date</label>
-        <input class="form-control" type="text" name="text" placeholder="eg Doe">
-      </div>
-      <div class="col-3">
-        <label class="col-form-label pt-0" for="lname">Number of days</label>
-      <input class="form-control" type="text" name="text" placeholder="eg Doe">
-    </div>
-       
-      </div>
-      </form>
-        </div>
-        <div class="modal-footer">
-          <button class="btn btn-danger btn-air-danger" type="button" data-bs-dismiss="modal">Cancel</button>
-          <button class="btn btn-primary btn-air-primary" type="button">Save</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- End of add Plan model-->
-   <!-- View Plan model-->
-   <div class="modal fade" id="viewPlanModal" tabindex="-1" role="dialog" aria-labelledby="viewPlanModal" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">View Your Leave Plan</h5>
-          <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <div class="row">
-            <div class="col-4">
-              <label class="col-form-label pt-0" for="fname">Leave Type</label>
-              <p class="form-control-static">Annual Leave</p>
-            </div>
-           
-            <div class="col-4">
-              <label class="col-form-label pt-0" for="lname">start date</label>
-              <p class="form-control-static">12/4/2024</p>
-            </div>
-            <div class="col-4">
-              <label class="col-form-label pt-0" for="lname">End date</label>
-              <p class="form-control-static">26/4/2024</p>
-            </div>
-          </div>
-            <div class="row">
-              <div class="col-4">
-                <label class="col-form-label pt-0" for="fname">Description</label>
-                <p class="form-control-static">having 14days for Annual Leave</p>
-              </div>
-         
-            <div class="col-4">
-              <label class="col-form-label pt-0" for="lname">Number of days</label>
-              <p class="form-control-static">14 days</p>
-            </div>
-          </div>
-        </div>
-        <div class="modal-footer">
-          <button class="btn btn-danger btn-air-danger" type="button" data-bs-dismiss="modal">Cancel</button>
-          <button class="btn btn-primary btn-air-primary" type="button">Save</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <!-- End of View Plan model-->
-
               <!-- Edit model-->
-                    <div class="modal fade" id="edituser" tabindex="-1" role="dialog" aria-labelledby="edituser" aria-hidden="true">
+                    <div class="modal fade" id="editproject" tabindex="-1" role="dialog" aria-labelledby="editproject" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                           <div class="modal-content">
                             <div class="modal-header">
-                              <h5 class="modal-title">Edit User</h5>
+                              <h5 class="modal-title">Edit Client</h5>
                               <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
                               <form class="form-space theme-form ">
                                 <div class="row">
-                            <div class="col-4">
-                                <label class="col-form-label pt-0" for="fname">First Name</label>
+                            <div class="col-3">
+                                <label class="col-form-label pt-0" for="fname">Company Name</label>
                               <input class="form-control" type="text" placeholder="eg John">
                             </div>
-                            <div class="col-4">
-                                <label class="col-form-label pt-0" for="lname">Last Name</label>
+                            <div class="col-3">
+                                <label class="col-form-label pt-0" for="lname">Client Name</label>
                               <input class="form-control" type="text" name="text" placeholder="eg Doe">
                             </div>
-                            <div class="col-4">
-                                <label class="col-form-label pt-0" for="email">Email </label>
+                            <div class="col-3">
+                                <label class="col-form-label pt-0" for="email">Location</label>
                               <input class="form-control" type="text" name="text" placeholder="eg jdoe@softnet.co.tz">
                             </div>
                           </div>
-                                <div class="row">
-                            <div class="col-4">
-                                <label class="col-form-label pt-0" for="phone">Phone</label>
+                               
+                            <div class="col-3">
+                                <label class="col-form-label pt-0" for="phone">email</label>
                               <input class="form-control" type="text" placeholder="eg 255 657899089">
                             </div>
-                            <div class="col-4">
-                                <label class="col-form-label pt-0" for="branch">Branch</label>
-                                <select class="js-example-basic-single col-sm-12">
-                           
-                              <option value="AL">Arusha</option>
-                              <option value="WY">Bagamoyo</option>
-                       
-                         
-                              <option value="WY">Chato</option>
-                              <option value="WY">Dodoma</option>
-                              <option value="WY">Geita</option>
-                       
-                          </select>
+                            <div class="col-3">
+                                <label class="col-form-label pt-0" for="phone">Physical Adress</label>
+                              <input class="form-control" type="text" placeholder="eg 255 657899089">
                             </div>
-                            <div class="col-4">
-                                <label class="col-form-label pt-0" for="role">Role </label>
-                                   <select class="js-example-basic-single col-sm-12">
-                           
-                              <option value="AL">Admin</option>
-                              <option value="WY">Accountant</option>
-                       
-                         
-                              <option value="WY">Branch Manager</option>
-                              <option value="WY">UIN Generator</option>
-                             
-                       
-                          </select>
+                            <div class="col-3">
+                                <label class="col-form-label pt-0" for="phone">Country</label>
+                              <input class="form-control" type="text" placeholder="eg 255 657899089">
                             </div>
-                          </div>
+                          
+                         
                           </form>
                             </div>
                             <div class="modal-footer">
@@ -511,18 +511,16 @@
                         </div>
                       </div>
                       <!-- End of Edit model-->
-
-
            <!-- Deactivate model-->
                        <div class="modal fade" id="deactivateuser" tabindex="-1" role="dialog" aria-labelledby="deactivateuser" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered" role="document">
                           <div class="modal-content">
                             <div class="modal-header">
-                              <h5 class="modal-title">Deactivate User</h5>
+                              <h5 class="modal-title">Deactivate Project</h5>
                               <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                              <p>Are you sure you want to deactivate Ummusuleima Mwasha ?</p>
+                              <p>Are you sure you want to deactivate Softnet Technology client ?</p>
                             </div>
                             <div class="modal-footer">
                               <button class="btn btn-danger btn-air-danger" type="button" data-bs-dismiss="modal">No</button>
