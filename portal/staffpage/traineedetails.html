@@ -227,57 +227,145 @@
           <div class="container-fluid">
             <div class="edit-profile">
               <div class="row">
-                <div class="col-xl-4">
-                  <div class="card">
-                    <div class="card-header">
-                      <h class="text-xl "
-                      >PROFILE INFORMATION</h>
-                      <div class="card-options"><a class="card-options-collapse" href="#" data-bs-toggle="card-collapse"><i class="fe fe-chevron-up"></i></a><a class="card-options-remove" href="#" data-bs-toggle="card-remove"><i class="fe fe-x"></i></a></div>
-                    </div>
-                    <div class="card-body">
-                      <form enctype="multipart/form-data" action="/uploadProfile" method="post">
-                        <div class="row mb-2">
-                            <div class="profile-title">
-                                <div class="media">
-                                    <label for="profilePictureInput" style="cursor: pointer;">
-                                        <img id="profileImage" class="img-80 rounded-circle" alt="" src="../assets/css/images/best employee.jpg">
-                                        <i class="fas fa-camera" style="margin-left: 5px; font-size: 1.5em; color: #007bff;"></i>
-                                    </label>
-                                    <input type="file" id="profilePictureInput" name="profilePicture" style="display: none;" accept="image/*">
-                                    <div class="media-body">
-                                        <h5 class="mb-1">UMMUSULEIMA MUSTAPHA</h5>
-                                        <p>DESIGNER</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                          <button type="button" class="btn btn-outline-success-2x  btn-air-success" data-bs-toggle="modal"data-bs-target="#addAttachmentModal" >
-                              <i class="fas fa-paperclip" style="margin-right: 5px;"></i> Attach File
-                          </button>
-                          <input type="modal" id="#addAttachmentModal" name="attachment" style="display: none;">
-                        </div>
-                        <div class="mb-3">
-                            <h6 class="block text-base font light">Bio</h6>
-                            <textarea class="form-control" rows="5">On the other hand, we denounce with righteous indignation</textarea>
-                        </div>
-                        <div class="mb-3">
-                            <label class="block text-base font light">Email-Address</label>
-                            <input class="form-control" name="email" placeholder="your-email@domain.com">
-                        </div>
-                        <div class="mb-3">
-                            <label class="block text-base font light">Password</label>
-                            <input class="form-control" type="password" name="password" value="password">
-                        </div>
-                       
-                        <div class="form-footer">
-                            <button class="btn btn-primary btn-block" type="submit">Save</button>
-                        </div>
-                    </form>
+                <div class="col">
+                  <div class="col-xl-12">
+        <div class="card">
+          <div class="card-header">
+            <h class="text-xl">PROFILE INFORMATION</h>
+            <div class="card-options">
+              <a class="card-options-collapse" href="#" data-bs-toggle="card-collapse"><i class="fe fe-chevron-up"></i></a>
+              <a class="card-options-remove" href="#" data-bs-toggle="card-remove"><i class="fe fe-x"></i></a>
+            </div>
+          </div>
+          <div class="card-body">
+            <form enctype="multipart/form-data" action="/uploadProfile" method="post">
+              <div class="row mb-2">
+                <div class="profile-title">
+                  <div class="media">
+                    <label for="profilePictureInput" style="cursor: pointer;">
+                      <img id="profileImage" class="img-80 rounded-circle" alt="" src="../assets/css/images/best employee.jpg">
+                      <i class="fas fa-camera" style="margin-left: 5px; font-size: 1.5em; color: #007bff;"></i>
+                    </label>
+                    <input type="file" id="profilePictureInput" name="profilePicture" style="display: none;" accept="image/*">
+                    <div class="media-body">
+                      <h5 class="mb-1">UMMUSULEIMA MUSTAPHA</h5>
+                      <p>DESIGNER</p>
                     </div>
                   </div>
                 </div>
-                 
+              </div>
+              <div class="mb-3">
+                <button type="button" class="btn btn-outline-success-2x  btn-air-success" data-bs-toggle="modal" data-bs-target="#addAttachmentModal" onclick="positionModal()">
+                  <i class="fas fa-paperclip" style="margin-right: 5px;"></i> Attach File
+                </button>
+              </div>
+              <div class="mb-3">
+                <h6 class="block text-base font light">Bio</h6>
+                <textarea class="form-control" rows="5">On the other hand, we denounce with righteous indignation</textarea>
+              </div>
+              <div class="mb-3">
+                <label class="block text-base font light">Email-Address</label>
+                <input class="form-control" name="email" placeholder="your-email@domain.com">
+              </div>
+              <div class="mb-3">
+                <label class="block text-base font light">Password</label>
+                <input class="form-control" type="password" name="password" value="password">
+              </div>
+      
+              <div class="form-footer">
+                <button class="btn btn-primary btn-block" type="submit">Save</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-xl-12">
+        <div class="card">
+          <div class="card-header">
+            <h class="text-xl">LIST OF ATTACHMENT</h>
+          </div>
+          <div class="card-body">
+            <div class="table-responsive add-project">
+              <table class="table card-table table-vcenter text-nowrap">
+                <thead>
+                  <tr>
+                    <th>Attachment Name</th>
+                  
+                    <th>Expired Date</th>
+                   
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- Sample project rows (you can replace these with dynamic data) -->
+                  <tr>
+                    <td>CV</td>
+                    <td>19/2/2024</td>
+              
+                    
+                    <td class="hover-icons-container">
+                      <!-- Your action icons for the project -->
+                      <a href="javascript:void(0)" class="hover-icon" data-bs-toggle="modal" data-bs-target="#addPlanModal" title="View Attachment">
+                        <i class="fa fa-eye"style="color: green;"></i>
+                      </a>
+                      <a href="javascript:void(0)" class="hover-icon" data-bs-toggle="modal" data-bs-target="#addPlanModal" title="Edit">
+                        <i class="fa fa-edit"style="color: blue;"></i>
+                      </a>
+                      <a href="javascript:void(0)" class="hover-icon" data-bs-toggle="modal" data-bs-target="#addPlanModal" title="Delete">
+                        <i class="fa fa-thumbs-o-down"style="color: red;"></i>
+                      </a>
+                      <!-- ... (Other action icons) ... -->
+                    </td>
+                  </tr>
+                  <!-- Add more project rows as needed -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      </div>
+                
+      
+      
+<!-- Modal for attaching files -->
+
+<div class="modal fade" id="addAttachmentModal" tabindex="-1" role="dialog" aria-labelledby="addAttachmentModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="addAttachmentModalLabel">Attach Files</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <!-- Your modal content for attaching files goes here -->
+        <form id="attachmentForm">
+          <div class="row">
+
+            <div class="mb-3">
+              <label for="attachmentInput">Attachment:</label>
+              <input type="file" id="attachmentInput" name="attachment" accept="image/*">
+            </div>
+            <div class="mb-3">
+              <label for="expirationDateInput">Expiry Date:</label>
+              <input type="date" id="expirationDateInput" name="expirationDate">
+            </div>
+          </div>
+          
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" onclick="addAttachment()">Add Attachment</button>
+        <button type="button" class="btn btn-secondary" onclick="submitAttachments()">Submit Attachments</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
 
 
                 <div class="col-xl-8">
@@ -621,6 +709,50 @@
     <script src="../assets/js/script.js"></script>
     <script src="../assets/js/theme-customizer/customizer.js"></script>
     <script>new WOW().init();</script>
+
+  
+    <script>
+      function positionModal() {
+        // Get the position of the button
+        var buttonPosition = document.querySelector('.btn-outline-success-2x').getBoundingClientRect();
+    
+        // Set the modal position based on the button position
+        var modal = document.getElementById('addAttachmentModal');
+        modal.style.position = 'fixed';
+        modal.style.top = buttonPosition.top - 250 + 'px';
+        modal.style.left = buttonPosition.left - 700 + 'px'; // Adjust the distance as needed
+      }
+    </script>
+  <script>
+    var attachments = [];
+  
+    function addAttachment() {
+      // Get form values
+      var attachmentInput = document.getElementById('attachmentInput');
+      var expirationDateInput = document.getElementById('expirationDateInput');
+  
+      // Add attachment details to the list
+      attachments.push({
+        attachment: attachmentInput.files[0], // Assuming a single file is selected
+        expirationDate: expirationDateInput.value
+      });
+  
+      // Clear form values
+      attachmentInput.value = '';
+      expirationDateInput.value = '';
+    }
+  
+    function submitAttachments() {
+      // You can now handle the submitted attachments (e.g., send them to the server)
+      console.log(attachments);
+  
+      // Clear the attachments list
+      attachments = [];
+  
+      // Close the modal
+      $('#addAttachmentModal').modal('hide');
+    }
+  </script>
   </body>
 
 <!-- Mirrored from admin.pixelstrap.com/cuba/template/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 04 Dec 2023 07:25:09 GMT -->
