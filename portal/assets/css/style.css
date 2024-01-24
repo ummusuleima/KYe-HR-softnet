@@ -37883,10 +37883,12 @@ table.table-bordered thead tr th p {
 .page-wrapper .page-body-wrapper .page-body:before {
   animation: fadeIn 0.5s ease-in-out;
 }
+
 .page-wrapper .page-body-wrapper .page-title {
   padding: 15px 30px;
   margin: 0 -27px 28px;
   background-color: #fff;
+  width: 150vh;
 }
 .page-wrapper .page-body-wrapper .page-title > .row {
   margin: 0;
@@ -38862,6 +38864,7 @@ table.table-bordered thead tr th p {
   min-width: 84vw;
   margin-left: 265px;
 }
+
 
 .page-wrapper.compact-wrapper.dark-sidebar .sidebar-main-title h6, .page-wrapper.compact-wrapper.color-sidebar .sidebar-main-title h6 {
   color: rgba(255, 255, 255, 0.6);
