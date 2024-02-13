@@ -42756,7 +42756,7 @@ html[dir=rtl] body.dark-only .page-wrapper .page-body-wrapper .page-body .card:n
   background-blend-mode: overlay;
   background-color: rgba(255, 255, 255, 0.5);
 }
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1280px)
   .box-layout .learning-filter {
     order: -1;
   }
