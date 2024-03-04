@@ -160,6 +160,9 @@
                    <li class="sidebar-list">
                     <a class="sidebar-link sidebar-title link-nav" href="permission.html"><i data-feather="lock"></i><span>Permission</span></a>  
                      </li> 
+                     <li class="sidebar-list">
+                      <a class="sidebar-link sidebar-title link-nav" href="uploaddoc.html"><i data-feather="file"></i><span>Documents</span></a>  
+                       </li> 
                      
                      
                      <li class="sidebar-main-title">
@@ -194,17 +197,18 @@
                
                   <li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav" href="userManage.html"><i data-feather="users"></i><span>Users</span></a>
                   </li>
-                  <li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav" href="client.html"><i data-feather="Client"></i><span>Client</span></a>
+                  <li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav" href="client.html"><i data-feather="user"></i><span>Client</span></a>
                   </li>
+                  
                   <li class="sidebar-list">
-                 <a class="sidebar-link sidebar-title link-nav" href="project.html"><i data-feather="file-text"></i><span>Project</span></a>
-                   
-                  </li>
-                 
-                   <li class="sidebar-list">
-                 <a class="sidebar-link sidebar-title link-nav" href="department.html"><i data-feather="briefcase"></i><span> Department</span></a>
-                   
-                  </li>
+                    <a class="sidebar-link sidebar-title link-nav" href="project.html"><i data-feather="file-text"></i><span>Project</span></a>
+                      
+                     </li>
+                    
+                      <li class="sidebar-list">
+                    <a class="sidebar-link sidebar-title link-nav" href="department.html"><i data-feather="briefcase"></i><span> Department</span></a>
+                      
+                     </li>
 
                   <li class="sidebar-main-title">
                     <div>
@@ -213,7 +217,7 @@
                     </div>
                   </li>
                 
-                  <li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav" href="sales.html"><i data-feather=""></i><span></span></a>
+                  <li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav" href="report.html"><i data-feather=""></i><span></span></a>
                
                   </li>
 
@@ -255,24 +259,27 @@
             <div class="row widget-grid">
               <div class="col-xxl-4 col-sm-6 box-col-6"> 
                 <div class="card profile-box">
-                  <div class="card-body">
-                    <div class="media media-wrapper justify-content-between">
-                      <div class="media-body"> 
-                        <div class="greeting-user">
-                          <h4 class="f-w-600">Best Employee of the Year</h4>
-                          <p><b>Ummusuleima Mustapha</b></p>
-                          <div class="whatsnew-btn"><a class="btn btn-outline-white"> Creativity At work</a></div>
+                    <div class="card-body">
+                        <div class="media media-wrapper justify-content-between">
+                            <div class="media-body"> 
+                                <div class="greeting-user">
+                                    <h4 class="f-w-600">Best Employee of the Year</h4>
+                                    <p><b>Ummusuleima Mustapha</b></p>
+                                    
+                                   
+                                    <div class="whatsnew-btn"><a href="yearlyemployee.html" class="btn btn-outline-white">Upload Here.</a></div>
+                                </div>
+                            </div>
+                            <div>  
+                                <div class="badge f-10 p-0" id="txt"></div>
+                            </div>
                         </div>
-                      </div>
-                      <div>  
-                        
-                        <div class="badge f-10 p-0" id="txt"></div>
-                      </div>
+                        <div class="cartoon"><img class="img-fluid" src="https://admin.pixelstrap.com/cuba/assets/images/dashboard/cartoon.svg" alt="vector women with laptop"></div>
                     </div>
-                    <div class="cartoon"><img class="img-fluid" src="https://admin.pixelstrap.com/cuba/assets/images/dashboard/cartoon.svg" alt="vector women with leptop"></div>
-                  </div>
                 </div>
-              </div>
+            </div>
+            
+              
               <div class="col-xxl-auto col-xl-3 col-sm-6 box-col-6"> 
                 <div class="row"> 
                   <div class="col-xl-12"> 
@@ -409,7 +416,7 @@
                               </div>
                             </div>
                             <div> 
-                              <h4>120+</h4><span class="f-light">  </span>
+                              <h4>12</h4><span class="f-light">Total leaves Monthly </span>
                             </div>
                           </div>
                         
@@ -507,47 +514,81 @@
                   </div>
                 </div>
               </div>
-              <div class="col"> 
-              <div class=" col-xxl-12 col-md-4 col-sm-6">
-                <div class="card widget-hover overflow-hidden">
-                  <div class="card-header card-no-border pb-2">
-                    <h5>MISSION</h5>
-                  </div>
-                  <div class="card-body pt-0 count-student">
-                    <div class="school-wrapper"> 
-                      <div class="school-header">
-                        <p class="text-muted">To create brand name that reflects growing shareholder value, customer loyalty, staff engangment and eco-friendly solution.</p>
-                       
+              
+           
+                <div class="col-xxl-4 col-md-6  box-col-6">
+                  <div class="card schedule-card">
+                    <div class="card-header card-no-border">
+                      <div class="header-top">
+                        <h5 class="m-0">Staff on leave</h5>
+                        <div class="card-header-right-icon">
+                          <div class="dropdown">
+                            <button class="btn dropdown-toggle" id="popularButton" type="button" data-bs-toggle="dropdown" aria-expanded="false"></button>
+                            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="popularButton"><a class="dropdown-item" href="#">Today</a><a class="dropdown-item" href="#">Week</a><a class="dropdown-item" href="#">Month</a></div>
+                          </div>
+                        </div>
                       </div>
-                      <div class="school-body"> <img src="../assets/images/logo/Pointer-256.png" alt="total teachers">
-                        <div class="right-line"><img src="../assets/images/dashboard-7/line.png" alt="line"></div>
-                      </div>
+                    </div>
+                    <div class="card-body pt-0"> 
+                      <ul class="schedule-list"> 
+                        <li class="primary"><img src="../assets/images/dashboard/user/4.jpg" alt="profile">
+                          <div> 
+                            <h6 class="mb-1">Ummusuelima Mustapha</h6>
+                            <ul>
+                              <li class="f-light">
+                                <svg class="fill-icon f-light">
+                                  <use href="https://admin.pixelstrap.com/cuba/assets/svg/icon-sprite.svg#bag"></use>
+                                </svg><span> From: January 3, 2024</span>
+                              </li>
+                              <li class="f-light">
+                                <svg class="fill-icon f-light">
+                                  <use href="https://admin.pixelstrap.com/cuba/assets/svg/icon-sprite.svg#bag"></use>
+                                </svg><span> To: January 12, 2024</span>
+                              </li>
+                             
+                            </ul>
+                          </div>
+                        </li>
+                        <li class="warning"><img src="../assets/images/dashboard/user/2.jpg" alt="profile">
+                          <div> 
+                            <h6 class="mb-1">Abdulswamad Alawi</h6>
+                            <ul>
+                              <li class="f-light">
+                                <svg class="fill-icon f-light">
+                                  <use href="https://admin.pixelstrap.com/cuba/assets/svg/icon-sprite.svg#bag"></use>
+                                </svg><span> From:Febuary 10, 2024</span>
+                              </li>
+                              <li class="f-light">
+                                <svg class="fill-icon f-light">
+                                  <use href="https://admin.pixelstrap.com/cuba/assets/svg/icon-sprite.svg#bag"></use>
+                                </svg><span> To: February 23, 2024</span>
+                              </li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li class="warning"><img src="../assets/images/dashboard/user/2.jpg" alt="profile">
+                          <div> 
+                            <h6 class="mb-1">Ally Saleh</h6>
+                            <ul>
+                              <li class="f-light">
+                                <svg class="fill-icon f-light">
+                                  <use href="https://admin.pixelstrap.com/cuba/assets/svg/icon-sprite.svg#bag"></use>
+                                </svg><span> From:Febuary 10, 2024</span>
+                              </li>
+                              <li class="f-light">
+                                <svg class="fill-icon f-light">
+                                  <use href="https://admin.pixelstrap.com/cuba/assets/svg/icon-sprite.svg#bag"></use>
+                                </svg><span> To: February 23, 2024</span>
+                              </li>
+                            </ul>
+                          </div>
+                        </li>
+                      </ul>
                     </div>
                   </div>
                 </div>
-              </div>
 
-              <div class=" col-xxl-12 col-md-4 col-sm-6">
-                <div class="card widget-hover overflow-hidden">
-                  <div class="card-header card-no-border pb-2">
-                    <h5>VISION</h5>
-                  </div>
-                  <div class="card-body pt-0 count-student">
-                    <div class="school-wrapper"> 
-                      <div class="school-header">
-                        
-                            <p class="text-muted">ICT company that enveil African ingenuity to the world.</p>
-                     
-                      </div>
-                      <div class="school-body"> <img src="../assets/images/logo/Eye-256.png" alt="total teachers">
-                        <div class="right-line"><img src="../assets/images/dashboard-7/line.png" alt="line"></div>
-                      </div>
-                    </div>
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
+          
  
             </div>
           </div>
